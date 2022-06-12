@@ -1,24 +1,23 @@
-import logo from './logo.svg';
 import './App.css';
+import Explore from './components/explore/Explore';
+import Header from './components/header/Header'
+import Slider from './components/homeslider/Slider';
+import Other from './components/otherstuff/Other';
+import ProductFeatured from './components/product/ProductFeatured';
+import Seen from './components/otherstufftwo/Seen';
+import Fav from './components/fav/Fav'
+import Discover from './components/discover/Discover';
+import Footer from './components/footer/Footer';
+import MyRoute from './MyRoutes/MyRoute';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+   <>
+    <Header/>
+    <MyRoute/>
+    <Footer/>  
+ 
+  </>
   );
 }
 

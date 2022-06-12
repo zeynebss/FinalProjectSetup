@@ -1,0 +1,48 @@
+
+    
+    .homeSlider{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 265px 0;
+        
+
+        .slider-text-area{
+            h2{
+                font-size: 60px;
+                color: black;
+            }
+            h3{
+                color: black;
+                font-size: 53px;
+    
+            }
+            h6{
+                letter-spacing: 2.25px;
+                margin-bottom: 25px!important;
+                font-size: 20px;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            p{
+                font-size: 18px;
+        margin-top: 16px;
+        color: gray;
+        
+            }
+           .slider-button{
+               button{
+                border: none;
+                background-color: black;
+                transition: .3s all;
+                color: white;
+                font-size: 18px;
+                border-radius: 4px;
+                padding: 10px 25px;
+                &:hover{
+                    background-color: #4E7661;
+                }
+               }
+           } 
+    
+        }
+    }

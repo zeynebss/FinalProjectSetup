@@ -1,0 +1,56 @@
+.explore-area {
+    margin-top: 6rem;
+    .containerSide{
+        width: 96%;
+        margin:auto ;
+    .explore-box{
+        position: relative;
+        figure{
+     width: 610px;
+	height: 420px;
+	margin: 0;
+	padding: 0;
+
+	overflow: hidden;
+        &:hover img {
+                transform: scale(1.3);
+            }
+            img{
+    transform: scale(1);
+    -webkit-transform: scale(1);
+
+	transition: .3s ease-in-out;
+            }
+        }
+        .explore-text{
+         
+ position: absolute;
+ top: 40%;
+ left: 5%;
+ transform: translateY(-50%);
+ h2{
+    font-size: 34px;
+ }
+ .explore-button{
+    margin-top: 2rem;
+    button{
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+        padding: 15px 25px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        font-weight: 600;
+        transition: .5s all;
+        &:hover{
+            color: white;
+            background-color: black;
+        }
+    }
+}
+        }
+      
+       
+    }
+  
+}
+}

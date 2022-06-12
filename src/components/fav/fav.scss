@@ -1,0 +1,20 @@
+.customer-fav-area{
+    padding-top: 100px;
+    .containerSide{
+        width: 96%;
+        margin: auto;
+        .fav-header{
+            padding: 25px;
+            p{
+                font-size: 18px;
+                color: gray;
+            }
+        }
+        .fav-sideOne{
+            img{
+                width: 482px;
+                height: 806px;
+            }
+        }
+    }
+}

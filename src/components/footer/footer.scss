@@ -1,0 +1,69 @@
+.footer-area{
+    padding: 100px 0;
+    background: #F8F8F8;
+  ul{
+    li{
+        color: gray;
+        padding: 8px;
+        cursor: pointer;
+        transition: .5s;
+        &:hover{
+            text-decoration: underline;
+            text-decoration-color: black;
+        }
+    }
+  }
+  form{
+    padding-top: 2rem;
+
+   .input-part{
+    outline: none;
+        width: 75%;
+        height: 48px;
+    line-height: 46px;
+    padding: 0 20px;
+        border:none;
+    }
+    .input-btn{
+        height: 48px;
+         
+        line-height: 46px;
+        padding: 0 20px;
+        background: #000;
+        color: white;
+        border: none;
+        transition: .6s;
+        &:hover{
+            background: #4E7661 ;
+        }
+    }
+  }
+    .footer-end{
+   padding-top: 8rem;
+   
+        .footer-logo{
+           img{
+               width: 170px;
+               height: 26px;
+           }
+        }
+        .footer-icons{
+            ul{
+                li{
+                    margin: 0;
+                    font-size: 18px;
+                    i{
+                        color: black;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+           .footer-payment{
+               img{
+                   width: 313px;
+                   height: 28px;
+               }
+           }
+       }
+}

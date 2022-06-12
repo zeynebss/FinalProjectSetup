@@ -1,0 +1,72 @@
+.discover-area{
+    .containerSide{
+        width: 96%;
+        margin: auto;
+        .discover-header {
+            padding: 40px;
+        }
+        .discover-box{
+            padding: 100px 0;
+            img{
+                width: 611px;
+                height: 328px;
+            }
+            .discover-text{
+                padding-top: 2rem;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    font-size: 28px;
+                    font-weight: 600;
+                }
+                p{
+                    transition: .5s;
+                    font-weight: 500;
+                    padding-top: 10px;
+                    font-size: 17px;
+                    cursor: pointer;
+                    &:hover{
+                        color: gray;
+                    }
+                }
+            }
+        }
+        .fav-section{
+            padding: 100px 0;
+           .favimg-box{
+              position: relative;
+           
+              &:hover .fav-overlay{
+             
+                opacity: 1;
+              }
+               img{
+                   width: 234px;
+                   height: 234px;
+               }
+               .fav-overlay{
+                cursor: pointer;
+                transition: .6s;
+            background: rgb(0, 0, 0);
+           background: rgba(0, 0, 0, 0.7); 
+            width: 234px;
+            height: 234px;
+             opacity: 0;
+         bottom: 100%;  
+            position: absolute;
+             transform: translateY(100%);
+                i{
+                    color: white;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 35%;
+                    font-size: 34px;
+                    font-weight: 700;
+                    transform: translate(-50%,-35%);
+                }
+               }
+           } 
+        }
+    }
+
+}
