@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import Explore from './components/explore/Explore';
 import Header from './components/header/Header'
 import Slider from './components/homeslider/Slider';
@@ -11,11 +11,13 @@ import Footer from './components/footer/Footer';
 import MyRoute from './MyRoutes/MyRoute';
 
 function App() {
+
   return (
    <>
     <Header/>
     <MyRoute/>
     <Footer/>  
+ 
  
   </>
   );

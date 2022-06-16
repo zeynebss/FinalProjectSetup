@@ -4,6 +4,7 @@
     width: 100%;
     z-index: 2;
   
+  
     .shipping{
         background-color: #4E7661;
         width: 100%;
@@ -30,22 +31,86 @@
                 padding: 0;
                 li{
                     padding: 20px;
-                   .active-dec{
-                    border-bottom: 1px solid black;
-                    margin: 3px;
+                  &:hover .dropdown{
+                    opacity: 1;
+                    visibility: visible;
+                    transform: translateY(23px);
+                  }  
+                  position: relative;
+                   .dropdown {
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    min-width: 230px;
+                    padding: 10px 0;
+                    font-weight: 400;
+                 margin: 0;
+                  background-color: #fff;
+                  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+                  border-radius: 5px;
+                    opacity: 0;
+                    visibility: hidden;
+                    transition: .3s;
+                  
+                    li{
+                        &:hover .dropdown-2{
+                            opacity: 1;
+                            visibility: visible;
+                            transform: translateY(23px);
+                          }  
+                        .dropdown-2{
+                    transition: .3s;
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    min-width: 220px;
+                    padding: 10px 0;
+                 margin: 0;
+                  background-color: #fff;
+                  box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+                  border-radius: 5px;
+                    opacity: 0;
+                    visibility: hidden;
+                            
+                        }
+                       a{
+                        color: #7E7E7E;
+                        font-size: 15px;
+                         text-transform: capitalize;
+                         transition: .4s;
+                     
+                         &:hover{
+                            color: black;
+                         }
+                         &:hover:after{
+                         width: 0;
+                         }
+                       }
+                    }
                    }
                     a{
-                      font-size: 15px;
+                      font-size: 14px;
                         text-decoration: none;
                         color: black;
                        text-transform: uppercase;
                        font-weight: 500;
+                       &:after{
+                        content: '';
+                        display: block;
+                        width: 0;
+                        height: 1px;
+                        background-color: #000;
+                        transition: width .3s;
+                     }
+                     &:hover:after{
+                        width: 90%;
+                     }
                         
                     }
                     img{
                         max-height: 26px;
-                      
-                        vertical-align: middle;
+                    vertical-align: middle;
+                     cursor: pointer;
                     }
 
                 }

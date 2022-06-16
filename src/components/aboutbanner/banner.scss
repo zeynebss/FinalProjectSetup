@@ -1,0 +1,61 @@
+.banner{
+    padding: 240px 0 67px 0;
+    .about-banner{
+        .about-image-banner{
+          cursor: pointer;
+            figure{
+      width: 565px;
+    height: 365px;
+    margin: 0;
+	padding: 0;
+    overflow: hidden;
+
+    &:hover img{
+   
+	transform: scale(1.3);
+}
+img{
+    transform: scale(1);
+	transition: .3s ease-in-out;
+    }
+  
+    }
+
+    
+  
+            }
+        }
+.about-text-banner{
+
+.text-p{
+    margin-top: 25px;
+    color: gray;
+    font-size: 14px;
+}
+.text-banner-down{
+    padding-top: 2rem;
+    .text-side-1{
+        p{
+            color: gray;
+            font-size: 14px;
+            padding-top: 6px;
+        }
+        h6{
+            color: rgb(71, 70, 70);
+        }
+    }
+    .text-side-2{
+
+        ul{
+            li{
+                font-size: 14px;
+              span{
+                color: gray;
+                padding-left: 18px;
+              }
+            }
+        }
+    }
+}
+}
+}

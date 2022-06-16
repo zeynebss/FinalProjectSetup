@@ -1,0 +1,54 @@
+.aboutTeam{
+    .team-head-text{
+        max-width: 55%;
+        margin: 0 auto;
+        h1{
+            font-size: 40px;
+            
+        }
+        p{
+        padding-top: 1rem;
+        color:gray;
+        }
+     }
+     .team-boxes{
+        .team-box{
+            padding: 60px 0;
+            user-select: none;
+           position: relative;
+           cursor: pointer;
+           &:hover .team-hover-icons{
+            opacity: 1;
+           }
+            .team-hover-icons{
+
+            margin-top: 0px;
+            position: absolute;
+            bottom: 24.5%;
+            transform: translateY(-24.5%);
+            background-color: #EEEEEE;
+            opacity: 0;
+            transition: .6s;
+            width: 261px;
+            min-height: 52px;
+                 i{
+                  font-size: 20px;
+               padding: 18px 20px 20px;
+              
+                }
+            }
+            .team-name{
+                margin-top: 16px;
+            h5{
+                font-size: 20px;
+                font-weight: 600;
+                color: black;
+            }
+            p{
+                font-size: 16px;
+                color: gray;
+            }
+            }
+        }
+     }
+}

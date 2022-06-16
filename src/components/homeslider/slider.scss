@@ -46,3 +46,25 @@
     
         }
     }
+// .swiper-pagination-bullet{
+//     background-color: transparent;
+//     width: 30px;
+//     border: 1p solid black;
+// }
+.swiper-pagination{
+    padding-left: 1rem;
+}
+.swiper-pagination-bullet{
+ background-color: black ;
+padding: 5px ;
+width: 8px;
+height: 2px;
+opacity: 1;
+}
+.swiper-pagination-bullet-active{
+    background-color: transparent;
+
+    border: 1px solid black;
+ width: 15px;
+ height: 15px;
+ }

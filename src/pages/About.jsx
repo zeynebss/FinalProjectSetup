@@ -1,8 +1,17 @@
 import React from 'react'
+import Banner from '../components/aboutbanner/Banner'
+import BannerTwo from '../components/aboutbannertwo/BannerTwo'
+import Team from '../components/aboutTeam/Team'
+import Scroll from '../components/scrolltop/Scroll'
 
 const About = () => {
   return (
-    <div>About</div>
+    <>
+    <Banner/>
+    <BannerTwo/>
+    <Team/>
+    <Scroll/>
+    </>
   )
 }
 

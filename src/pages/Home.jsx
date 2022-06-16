@@ -6,7 +6,8 @@ import Seen from '../components/otherstufftwo/Seen'
 import ProductFeatured from '../components/product/ProductFeatured'
 import Fav from '../components/fav/Fav'
 import Discover from '../components/discover/Discover'
-import Footer from '../components/footer/Footer'
+import Scroll from '../components/scrolltop/Scroll'
+
 
 const Home = () => {
   return (
@@ -18,7 +19,7 @@ const Home = () => {
         <Seen/>
         <Fav/>
         <Discover/>
-        <Footer/>
+        <Scroll/>
     </div>
   )
 }
