@@ -80,7 +80,7 @@ const Header = () => {
                    <Link to='/'><i><FiSearch/></i></Link>
                </li>
                <li>
-               <Link to='/'><i><AiOutlineUser/></i> </Link>
+               <Link to='/myaccount'><i><AiOutlineUser/></i> </Link>
                </li>
                <li>
                    <Link to='/'><i><BsStar/></i></Link>
