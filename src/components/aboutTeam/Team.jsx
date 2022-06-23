@@ -1,5 +1,6 @@
 import React from 'react'
 import './team.scss'
+import '../responsive/responsive.scss'
 import memberOne from '../../assets/memberOne.jpg'
 import memberTwo from '../../assets/memberTwo.jpg'
 import member3 from '../../assets/member3.jpg'
@@ -17,14 +18,20 @@ const Team = () => {
             Plus, Aldays dress up or down, no prob. So you can wear them all day. Get it?</p>
         </div>
         <div className="team-boxes  row align-items-center justify-content-between">
-          <div className="col-12 col-lg-3">
+          <div className="col-12 col-lg-3 col-md-3">
             <div className="team-box text-center">
                 <img className='img-fluid' src={memberOne} alt="" />
                 <div className="team-hover-icons">
-                 <i><AiOutlineTwitter/></i>
+                  <ul className='d-flex list-unstyled'>
+                    <li><i><AiOutlineTwitter/></i></li>
+                    <li><i><FaFacebook/></i></li>
+                    <li><i><AiOutlineInstagram/></i></li>
+                    <li><i><AiFillYoutube/></i></li>
+                  </ul>
+                 {/* <i><AiOutlineTwitter/></i>
                  <i><FaFacebook/></i>
                  <i><AiOutlineInstagram/></i>
-                 <i><AiFillYoutube/></i>
+                 <i><AiFillYoutube/></i> */}
                 </div>
                 <div className="team-name">
                     <h5>Glory to Fedutik.</h5>
@@ -33,7 +40,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="col-12 col-lg-3">
+          <div className="col-12 col-lg-3 col-md-3">
             <div className="team-box text-center">
                 <img className='img-fluid' src={memberTwo} alt="" />
                 <div className="team-hover-icons">
@@ -49,7 +56,7 @@ const Team = () => {
             </div>
           </div>
 
-          <div className="col-12 col-lg-3">
+          <div className="col-12 col-lg-3 col-md-3">
             <div className="team-box text-center">
                 <img className='img-fluid' src={member3} alt="" />
                 <div className="team-hover-icons">
@@ -64,7 +71,7 @@ const Team = () => {
                 </div>
             </div>
           </div>
-          <div className="col-12 col-lg-3">
+          <div className="col-12 col-lg-3 col-md-3">
             <div className="team-box text-center">
                 <img className='img-fluid' src={member4} alt="" />
                 <div className="team-hover-icons">

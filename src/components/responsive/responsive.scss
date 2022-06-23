@@ -1,0 +1,73 @@
+@media screen  and (max-width:1199px){
+// header
+header{
+    .shipping{
+        display: none;
+    }
+    .navMenu{
+        .menu{
+            img{
+                display: block !important;
+            }
+            display: none;
+
+        }
+         .header-icons{
+          display: none;
+        }
+        
+    }
+}
+
+.banner{
+.about-text-banner{
+h2{
+    font-size: 40px;
+    margin-top: 1rem;
+
+}
+}  
+}
+.aboutTeam{
+.team-boxes{
+    .team-box{
+        padding: 60px 0;
+        user-select: none;
+       position: relative;
+       cursor: pointer;
+       &:hover .team-hover-icons{
+        opacity: 1;
+       }
+        .team-hover-icons{
+      width: 60px;
+         
+        margin-top: 0px;
+        position: absolute;
+        bottom: 24.5%;
+        transform: translateY(-24.5%);
+        background-color: red;
+        opacity: 0;
+        transition: .6s;
+        min-height: 52px;
+             i{
+              font-size: 20px;
+          
+            }
+        }
+        .team-name{
+            margin-top: 16px;
+        h5{
+            font-size: 20px;
+            font-weight: 600;
+            color: black;
+        }
+        p{
+            font-size: 16px;
+            color: gray;
+        }
+        }
+    }
+ }
+}
+}
+  

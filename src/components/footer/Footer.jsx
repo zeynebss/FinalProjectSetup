@@ -60,10 +60,10 @@ const Footer = () => {
             </ul>
                </div>
                <div className="footer-logo">
-                   <img src={logo} alt="" />
+                   <img className='img-fluid' src={logo} alt="" />
                </div>
                <div className="footer-payment">
-                   <img src={iconPay} alt="" />
+                   <img className='img-fluid' src={iconPay} alt="" />
                </div>
            </div>
        </div>

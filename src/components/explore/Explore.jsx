@@ -2,14 +2,19 @@ import React from 'react'
 import explore1 from '../../assets/explore1.jpg'
 import explore2 from '../../assets/explore2.jpg'
 import './explore.scss'
-
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 const Explore = () => {
+    useEffect(()=>{
+ Aos.init({duration:2000});
+    },[])
   return (
     <div className="explore-area">
         <div className="containerSide">
             <div className="row explore-box justify-content-between align-items-center">
-                <div className=" col-12 col-lg-6">
+                <div data-aos="fade-up" className=" col-12 col-lg-6">
                <figure><img className=" img-fluid"  src={explore1} alt="" /></figure>     
                     <div className="explore-text">
                         <p> NEW COLLECTION </p>
@@ -23,7 +28,7 @@ const Explore = () => {
                         </div>
                     </div>
                 </div>
-                <div className=" col-12 col-lg-6">
+                <div data-aos="fade-up" className=" col-12 col-lg-6">
                   <figure>  <img className=" img-fluid" src={explore2} alt="" /></figure>
                   
                 </div>

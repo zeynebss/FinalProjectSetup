@@ -3,8 +3,9 @@ import "./faq.scss";
 import { Breadcrumb, BreadcrumbItem, BreadcrumbLink } from "@chakra-ui/react";
 import { Box } from '@chakra-ui/react'
 import { MdNavigateNext } from "react-icons/md";
-import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { FaHome } from "react-icons/fa";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
+
 import faqBanner from "../../assets/faqBanner.jpg";
 import {
   Accordion,

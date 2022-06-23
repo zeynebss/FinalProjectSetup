@@ -1,0 +1,108 @@
+.blogDetail{
+    padding: 130px 0;
+    .breadCrmb{
+        display: flex;
+        justify-content: center;
+        background-color: #F5F5F5;
+       padding: 15px 0px;
+      a{
+            color: gray;
+            text-decoration: none;
+          font-size: 17px;
+            &.active{
+             color: black;
+          font-size: 17px;
+             
+            }
+            
+        }
+    }
+    .blogDetailArea{
+    .detail{
+        .blogDimg{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        img{
+           object-fit: cover;
+            width: 1170px;
+            height: 700px;
+        }
+        &:hover .blog-image-overlay{
+            opacity: 1;
+        }
+        .blog-image-overlay{
+            position: absolute;
+            top: 0;
+           width: 1160px;
+            height: 700px;
+            opacity: 0;
+            background:rgba(0,0,0,0.5);
+            transition: .5s all; 
+        }
+    }
+        .banner-category {
+     
+       button{
+        background: #f5f5f5;
+        border-radius: 3px;
+        padding: 3px 16px;
+        font-size: 15px;
+        transition: .3s all;
+        border: none;
+        &:hover{
+            background-color: black;
+            color: white;
+        }
+       }
+            }
+             .comment-list{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                  ul{
+               li{
+                padding: 3px;        a{
+                    text-decoration: none;
+                    color: gray;
+                    font-size: 15px;
+                    transition: .3s;
+                    &:hover{
+                        color: black;
+                        text-decoration: underline;
+                        
+                    }
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+                
+                &.li-3::before{
+                    width: 1px;
+            height: 14px;
+            border-radius: 0;
+            content: "";
+            display: inline-block;
+           border-radius: 50%;
+            background-color: #c4c4c4;
+            margin: 0 10px;
+            vertical-align: middle;
+                }
+                &.li-4::before{
+                    content: "";
+            display: inline-block;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: #c4c4c4;
+            margin: 0 10px;
+            vertical-align: middle;
+                }
+               }
+                  }
+                }
+     
+    }
+}
+}

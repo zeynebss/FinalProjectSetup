@@ -1,0 +1,70 @@
+.resetPass{
+    padding: 130px  0 ;
+
+      .breadCrmb{
+    display: flex;
+    justify-content: center;
+    background-color: #F5F5F5;
+   padding: 15px 0px;
+  a{
+        color: gray;
+        text-decoration: none;
+      font-size: 17px;
+        &.active{
+         color: black;
+      font-size: 17px;
+         
+        }
+        
+    }
+} 
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    padding: 50px 0;
+}
+form{
+    p{
+        color: #7E7E7E;
+        font-size: 15px;
+    }
+    input{
+    outline: 0;
+    height: 48px;
+    padding: 0 20px;
+    border-radius: 3px;
+    width: 50%;
+    border: none;
+    background-color: #F5F5F5;
+    transition: .3s all;
+    &:hover{
+        border: 1px solid #4E7661;
+        background-color: white;
+    }
+   
+    }
+    button{
+        border: none;
+        display: inline-block;
+    font-size: 1rem;
+    line-height: 2.75rem;
+    padding: 0 2.1875rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    transition: .3s all;
+    &:hover{
+        background-color: #4E7661;
+    }
+
+    }
+    label{
+        margin-bottom: 14px;
+        font-weight: 600;
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        line-height: 1.2rem; 
+    }
+}
+}
