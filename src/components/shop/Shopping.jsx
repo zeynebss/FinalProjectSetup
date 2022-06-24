@@ -80,7 +80,10 @@ const Shopping = () => {
             </div>
 <div className="product-box text-center d-flex">
  <div className="box1">
+  <Link to='/productdetails'>
  <img className='img-fluid' src={product1} alt="" />
+
+  </Link>
   <h6>product-1</h6>
  </div>
  <div className="box1">
