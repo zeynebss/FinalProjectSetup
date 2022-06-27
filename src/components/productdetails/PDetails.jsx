@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useEffect, useState} from 'react'
 import './pdetails.scss'
 import product1 from '../../assets/product1.jpg'
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,25 +14,54 @@ import product22 from '../../assets/product22.jpg'
 import product33 from '../../assets/product33.jpg'
 import product44 from '../../assets/product44.jpg'
 
-import { FreeMode, Navigation, Thumbs } from "swiper";
+import { FreeMode, Navigation, Thumbs,Lazy,Controller,Pagination } from "swiper";
 const PDetails = () => {
-    // const [thumbsSwiper, setThumbsSwiper] = useState(null);
-  
-  return (
+    const [swiper, updateSwiper] = useState(null);
+    // Swiper thumbsinstance
+    const [swiperThumbs, updateSwiperThumbs] = useState(null);
+    let params = {
+        modules: [Controller, Pagination, Navigation, Lazy],
+        preloadImages: false,
+        lazy: true,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+          clickable: true
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev"
+        },
+        loop: false,
+        spaceBetween: 30,
+        getSwiper: updateSwiper // Get swiper instance callback
+      };
+      let thumbsParams = {
+        modules: [Controller],
+        slideToClickedSlide: true,
+        slidesPerView: "auto",
+        centeredSlides: true,
+        spaceBetween: 10,
+        getSwiper: updateSwiperThumbs, // Get swiper instance callback
+        style: {
+          width: "100px"
+        }
+      };
+      // Bind swiper and swiper thumbs
+  useEffect(() => {
+    if (swiper && swiperThumbs) {
+      swiper.controller.control = swiperThumbs;
+      swiperThumbs.controller.control = swiper;
+    }
+  }, [swiper, swiperThumbs]);
+    return (
    <section className="productDetails">
     <div className="container">
-        <div className="row justify-content-between align-items-center">
+        <div className="row justify-content-between align-items-cezzzzzer">
           <div className="col-lg-4">
             <div className="pdetails-img">
             <Swiper
-        style={{
-          "--swiper-navigation-color": "#fff",
-          "--swiper-pagination-color": "#fff",
-        }}
-        spaceBetween={10}
-        navigation={true}
-        // thumbs={{ swiper: thumbsSwiper }}
-        modules={[FreeMode, Navigation, Thumbs]}
+            {...params}
         className="mySwiper2"
       >
        
@@ -50,26 +79,22 @@ const PDetails = () => {
         </SwiperSlide>
       </Swiper>
       <Swiper
-        // onSwiper={setThumbsSwiper}
-        spaceBetween={5}
-        slidesPerView={4}
-        freeMode={true}
-        watchSlidesProgress={true}
-        modules={[FreeMode, Navigation, Thumbs]}
-        className="mySwiper"
+         {...thumbsParams}
       >
-         <SwiperSlide>
-          <img src={product1} style={{width:"70px",height:"80px"}} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={product2} style={{width:"70px",height:"80px"}} alt='' />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={product3} style={{width:"70px",height:"80px"}}  alt=''/>
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src={product4} style={{width:"70px",height:"80px"}}  alt=''/>
-        </SwiperSlide>
+         <div className=''>
+          <img 
+            className="swiper-lazy"
+          src={product1}  alt='' />
+        </div>
+        <div >
+          <img src={product2}  alt='' />
+        </div>
+        <div>
+          <img src={product3}   alt=''/>
+        </div >
+        <div >
+          <img src={product4}  alt=''/>
+        </div >
       </Swiper>
             </div>
 
